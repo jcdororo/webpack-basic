@@ -11,3 +11,6 @@ package.json 파일 생성
 HtmlWebPackPlugin 은 웹팩이 html 파일을 읽어서 html 파일을 빌드할 수 있게 해 준다.   
 `$ npm i -D html-webpack-plugin`   
 
+# Webpack Caching
+웹팩(Webpack) 컴파일로 생성된 파일에서 변경된 내용이 없다면 브라우저는 캐시 상태를 유지하고 그대로 사용하게 된다.   
+여기서 브라우저가 변경사항을 확인하는 방법 중 하나는 파일 이름이며 그렇기 때문에 파일을 생성 할 때 해쉬값을 줄 수 있다.   
