@@ -19,4 +19,8 @@ HtmlWebPackPlugin 은 웹팩이 html 파일을 읽어서 html 파일을 빌드�
 ES6이상의 자바스크립트 코드는 인터넷 익스플로러 혹은 구버전 브라우저에서 지원이 안되는 경우가 있는데   
 그렇기 때문에 이러한 구버전 브라우저에서도 최신 자바스크립트 코드로 이루어진 앱을 이용할 수 있게 ES5 이하의 코드로 프랜스파일링 하도록 하는 기능이 바벨.   
 그리고 웹팩으로 파일을 번들링(bundling)할 때도 바벨을 사용할 수 있게 해주는 것이 babel-loader   
-`$ npm install -D babel-loader @babel/core @babel/preset-env`
+`$ npm install -D babel-loader @babel/core @babel/preset-env`   
+
+# bundle analyzer
+번들 내부에 무엇이 있는지 파악하거나 크기를 가장 많이 차지하는 모듈을 쉽게 알아 볼 수 있다.   
+`$ npm install webpack-bundle-analyzer --save-dev`
