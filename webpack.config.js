@@ -13,6 +13,7 @@ module.exports = {
     filename: '[name][contenthash].js',
     clean: true
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -30,5 +31,13 @@ module.exports = {
       filename: 'index.html',
       template: 'src/index.html'
     })
-  ]
+  ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist')
+    },
+    compress: true,
+    port: 3000,
+    open: true
+  }
 }
